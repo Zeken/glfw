@@ -1427,6 +1427,11 @@ void _glfwPlatformPostEmptyEvent(void)
     XFlush(_glfw.x11.display);
 }
 
+const char* _glfwPlatformGetKeyName(int key, int scancode)
+{
+    return NULL;
+}
+
 void _glfwPlatformSetCursorPos(_GLFWwindow* window, double x, double y)
 {
     // Store the new position so it can be recognized later
